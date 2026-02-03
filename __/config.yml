@@ -1,0 +1,66 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# UnCSS will use these settings
+UNCSS_OPTIONS:
+  html:
+    - "src/**/*.html"
+  ignore:
+    - !!js/regexp .foundation-mq
+    - !!js/regexp ^\.is-.*
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist wordpress theme folder
+  global: 
+    assets:
+      - "src/assets/**/*"
+      - "!src/assets/{images,icons}"
+      - "!src/assets/{images,icons}/**/*"
+      - "!src/assets/.DS_Store"
+    js:
+      - "src/js/**/*"
+      - "!src/js/*.js"
+      - "!src/js/{libs,components,default,helpers}"
+      - "!src/js/{libs,components,default,helpers}/**/*"
+      - "!src/js/.DS_Store"
+    template:
+      - "src/template/**/*"
+      - "!src/template/.DS_Store"
+  # Path to dist wordpress theme folder
+  theme: "../"
+  # Path to CLEAN folder
+  clean: 
+    - "../assets/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    archives:
+      - "src/scss/*.scss"
+    watcher:
+      - "**/scss/**/*.scss"
+    includes:
+      - "node_modules/bootstrap/scss"
+      - "node_modules/swiper"
+  js:
+    archives:
+      - "src/js/*.js"
+    watcher:
+      - "src/js/**/*.js"
+  images:
+    archives:
+      - "src/assets/images/**/*.{gif,svg}"
+    webp:
+      - "src/assets/images/**/*.{jpg,jpeg,png}"
+  icons:
+    file: "node_modules/bootstrap-icons/bootstrap-icons.svg"
+    archives: "src/assets/icons/*.svg"
+    watcher:
+    - "src/assets/icons/**/*.svg"
+    prefix: "bc"
+    render: "icons"

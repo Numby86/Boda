@@ -1,0 +1,25 @@
+.petit {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 22px;
+  color: green;
+  margin: 0;
+  padding: 0;
+  background-color: #fecb7c;
+}
+
+.layout-other{
+  position: relative;
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    h1, p{
+      text-align: center;
+    }
+  }
+}
