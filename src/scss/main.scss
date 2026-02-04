@@ -1,0 +1,100 @@
+// Variables básicas
+$bg: #0f172a;        // fondo
+$card: #111827;      // tarjeta
+$text: #e5e7eb;      // texto
+$muted: #9ca3af;     // texto suave
+$accent: #22c55e;    // verde
+$accent2: #60a5fa;   // azul
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(120deg, $bg, #0b1023);
+  color: $text;
+}
+
+.app {
+  max-width: 860px;
+  margin: 48px auto;
+  padding: 0 16px;
+
+  &__header {
+    margin-bottom: 20px;
+
+    h1 { margin: 0 0 8px; }
+  }
+}
+
+.muted {
+  color: $muted;
+  margin: 0;
+}
+
+.card {
+  background: rgba($card, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+  h2 { margin-top: 0; }
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 14px 0;
+}
+
+.btn {
+  border: 0;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: #06121a;
+  background: linear-gradient(135deg, $accent, $accent2);
+  font-weight: 700;
+
+  &:hover { filter: brightness(1.05); }
+  &:active { transform: translateY(1px); }
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+
+  &.ok {
+    border-color: rgba($accent, 0.4);
+    background: rgba($accent, 0.14);
+  }
+}
+
+.counter {
+  margin: 0 0 10px;
+  color: $muted;
+
+  strong { color: $text; }
+}
+
+.note {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  color: $muted;
+
+  code {
+    color: $text;
+    background: rgba(0,0,0,0.25);
+    padding: 2px 6px;
+    border-radius: 8px;
+  }
+}

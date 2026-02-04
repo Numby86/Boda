@@ -1,0 +1,12 @@
+{
+  "name": "mi-proyecto-html-scss-js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass:build": "sass src/scss/main.scss dist/css/main.css --no-source-map",
+    "sass:watch": "sass src/scss/main.scss dist/css/main.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

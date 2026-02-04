@@ -1,38 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo SCSS + JS</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+    <!-- CSS compilado desde SCSS -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Proyecto básico: HTML + SCSS + JS</h1>
+        <p class="muted">
+          Si ves estilos (tarjeta, colores, botón bonito) => SCSS OK.
+          Si el botón cambia el estado y contador => JS OK.
+        </p>
+      </header>
 
-  <title>Boda Ana y Fran</title>
-</head>
+      <section class="card">
+        <h2>Prueba rápida</h2>
 
-<body>
+        <div class="row">
+          <button id="btn" class="btn" type="button">Haz click</button>
+          <span id="status" class="badge">JS: pendiente</span>
+        </div>
 
-  <section class="layout-other">
-    <div class="layout-other-wrapper">
-      <img src="./assets/images/html/imagen_boda.JPG" alt="">
-      <h1 class="petit">Boda Ana y Fran</h1>
-      <div>
-        
-      <p class="petit"><i class="bi bi-bus-front"></i>19:00 : iglesia SMV</p></div>
-      <p class="petit">19:00 : empieza</p>
-      <p class="petit">19:00 : empieza</p>
-      <p class="petit">19:00 : empieza</p>
-      <p class="petit">19:00 : empieza</p>
-      <p class="petit">19:00 : empieza</p>
-      <p class="petit">19:00 : empieza</p>
-    </div>
-  </section>
+        <p class="counter">
+          Clicks: <strong id="count">0</strong>
+        </p>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script type="module" src="./assets/js/main.js" defer></script>
-</body>
+        <div class="note">
+          <strong>Tip:</strong> si cambias <code>main.scss</code> y tienes el watch activo,
+          deberías ver cambios al recargar.
+        </div>
+      </section>
+    </main>
 
+    <!-- JS -->
+    <script src="./src/js/main.js" defer></script>
+  </body>
 </html>
