@@ -1,8 +1,8 @@
 // Variables básicas
 $bg: #0f172a;        // fondo
 $card: #111827;      // tarjeta
-$text: #e5e7eb;      // texto
-$muted: #9ca3af;     // texto suave
+$text: #39170e;      // texto
+$muted: #39170e;     // texto suave
 $accent: #22c55e;    // verde
 $accent2: #60a5fa;   // azul
 
@@ -10,8 +10,15 @@ $accent2: #60a5fa;   // azul
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: linear-gradient(120deg, $bg, #0b1023);
+
+  background-image: url("/src/images/fondo.jpg");
+  background-size: cover;        // 🔑 cubre toda la pantalla
+  background-position: center;   // centra la imagen
+  background-repeat: no-repeat;  // evita mosaico
+  background-attachment: fixed;  // opcional: efecto parallax
+
   color: $text;
 }
 
@@ -33,7 +40,7 @@ body {
 }
 
 .card {
-  background: rgba($card, 0.75);
+  // background: rgba($card, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 20px;
@@ -55,7 +62,7 @@ body {
   padding: 10px 14px;
   border-radius: 12px;
   color: #06121a;
-  background: linear-gradient(135deg, $accent, $accent2);
+  // background: linear-gradient(135deg, $accent, $accent2);
   font-weight: 700;
 
   &:hover { filter: brightness(1.05); }
@@ -69,11 +76,11 @@ body {
   border-radius: 999px;
   font-size: 13px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.06);
+  // background: rgba(255, 255, 255, 0.06);
 
   &.ok {
     border-color: rgba($accent, 0.4);
-    background: rgba($accent, 0.14);
+    // background: rgba($accent, 0.14);
   }
 }
 
@@ -88,13 +95,29 @@ body {
   margin-top: 14px;
   padding: 12px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  // background: rgba(255, 255, 255, 0.05);
   color: $muted;
 
   code {
     color: $text;
-    background: rgba(0,0,0,0.25);
+    // background: rgba(0,0,0,0.25);
     padding: 2px 6px;
     border-radius: 8px;
   }
+}
+
+#countdown {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.image {
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  background-image: url("/src/images/boda-fran-ana.png");
+  background-size: contain;        // 🔑 cubre toda la pantalla
+  background-position: center;   // centra la imagen
+  background-repeat: no-repeat;  // evita mosaico
+  min-height: 100vh;
 }
