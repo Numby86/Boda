@@ -1,9 +1,9 @@
 {
-  "name": "mi-proyecto-html-scss-js",
+  "name": "boda",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "sass:build": "sass src/scss/main.scss dist/css/main.css --no-source-map",
+    "build": "mkdir -p dist/css && sass src/scss/main.scss dist/css/main.css --no-source-map",
     "sass:watch": "sass src/scss/main.scss dist/css/main.css --watch"
   },
   "devDependencies": {
