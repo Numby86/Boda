@@ -113,3 +113,353 @@ section{
   color: #fff;
   background-color: $text
 }
+
+// .btn-flw {
+//   height: 4em;
+//   width: 12em;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background: transparent;
+//   border: 0px solid black;
+//   text-decoration: none;
+// }
+
+// .wrapper {
+//   height: 2em;
+//   width: 8em;
+//   position: relative;
+//   background: transparent;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .text {
+//   font-size: 17px;
+//   z-index: 1;
+//   // color: #000;
+//   // background: rgba(255, 255, 255, 0.7);
+//   color: #39170e;
+//   background-color: rgba(225, 194, 165, 0.8);
+//   padding: 4px 12px;
+//   border-radius: 4px;
+//   transition: all 0.5s ease;
+// }
+
+// .flower {
+//   display: grid;
+//   grid-template-columns: 1em 1em;
+//   position: absolute;
+//   transition: grid-template-columns 0.8s ease;
+// }
+
+// .flower1 {
+//   top: -12px;
+//   left: -13px;
+//   transform: rotate(5deg);
+// }
+
+// .flower2 {
+//   bottom: -5px;
+//   left: 8px;
+//   transform: rotate(35deg);
+// }
+
+// .flower3 {
+//   bottom: -15px;
+//   transform: rotate(0deg);
+// }
+
+// .flower4 {
+//   top: -14px;
+//   transform: rotate(15deg);
+// }
+
+// .flower5 {
+//   right: 11px;
+//   top: -3px;
+//   transform: rotate(25deg);
+// }
+
+// .flower6 {
+//   right: -15px;
+//   bottom: -15px;
+//   transform: rotate(30deg);
+// }
+
+// .petal {
+//   height: 1em;
+//   width: 1em;
+//   border-radius: 40% 70% / 7% 90%;
+//   background: linear-gradient(#39170e, #b07a62);
+//   border: 0.5px solid #a36a54;
+//   z-index: 0;
+//   transition: width 0.8s ease, height 0.8s ease;
+// }
+
+// .two {
+//   transform: rotate(90deg);
+// }
+
+// .three {
+//   transform: rotate(270deg);
+// }
+
+// .four {
+//   transform: rotate(180deg);
+// }
+
+// .btn-flw:hover .petal {
+//   background: linear-gradient(#5a261b, #c9957d);
+//   border: 0.5px solid #b07a62;
+// }
+
+
+// .btn-flw:hover .flower {
+//   grid-template-columns: 1.5em 1.5em;
+// }
+
+// .btn-flw:hover .flower .petal {
+//   width: 1.5em;
+//   height: 1.5em;
+// }
+
+// .btn-flw:hover .text {
+//   // background: rgba(255, 255, 255, 0.4);
+//   background-color: rgba(225, 194, 165, 0.4);
+// }
+
+// .btn-flw:hover div.flower1 {
+//   animation: 15s linear 0s normal none infinite running flower1;
+// }
+
+// @keyframes flower1 {
+//   0% {
+//     transform: rotate(5deg);
+//   }
+
+//   100% {
+//     transform: rotate(365deg);
+//   }
+// }
+
+// .btn-flw:hover div.flower2 {
+//   animation: 13s linear 1s normal none infinite running flower2;
+// }
+
+// @keyframes flower2 {
+//   0% {
+//     transform: rotate(35deg);
+//   }
+
+//   100% {
+//     transform: rotate(-325deg);
+//   }
+// }
+
+// .btn-flw:hover div.flower3 {
+//   animation: 16s linear 1s normal none infinite running flower3;
+// }
+
+// @keyframes flower3 {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// .btn-flw:hover div.flower4 {
+//   animation: 17s linear 1s normal none infinite running flower4;
+// }
+
+// @keyframes flower4 {
+//   0% {
+//     transform: rotate(15deg);
+//   }
+
+//   100% {
+//     transform: rotate(375deg);
+//   }
+// }
+
+// .btn-flw:hover div.flower5 {
+//   animation: 20s linear 1s normal none infinite running flower5;
+// }
+
+// @keyframes flower5 {
+//   0% {
+//     transform: rotate(25deg);
+//   }
+
+//   100% {
+//     transform: rotate(-335deg);
+//   }
+// }
+
+// .btn:hover div.flower6 {
+//   animation: 15s linear 1s normal none infinite running flower6;
+// }
+
+// @keyframes flower6 {
+//   0% {
+//     transform: rotate(30deg);
+//   }
+
+//   100% {
+//     transform: rotate(390deg);
+//   }
+// }
+
+.btn-flw {
+  height: 4em;
+  width: 12em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0px solid black;
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 2em;
+  width: 8em;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 17px;
+  z-index: 1;
+  color: #39170e;
+  background-color: rgba(225, 194, 165, 0.8);
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.flower {
+  display: grid;
+  grid-template-columns: 1em 1em;
+  position: absolute;
+  transition: grid-template-columns 0.8s ease;
+}
+
+.flower1 {
+  top: -12px;
+  left: -13px;
+  transform: rotate(5deg);
+  animation: 15s linear infinite flower1;
+}
+
+.flower2 {
+  bottom: -5px;
+  left: 8px;
+  transform: rotate(35deg);
+  animation: 13s linear infinite flower2;
+}
+
+.flower3 {
+  bottom: -15px;
+  transform: rotate(0deg);
+  animation: 16s linear infinite flower3;
+}
+
+.flower4 {
+  top: -14px;
+  transform: rotate(15deg);
+  animation: 17s linear infinite flower4;
+}
+
+.flower5 {
+  right: 11px;
+  top: -3px;
+  transform: rotate(25deg);
+  animation: 20s linear infinite flower5;
+}
+
+.flower6 {
+  right: -15px;
+  bottom: -15px;
+  transform: rotate(30deg);
+  animation: 15s linear infinite flower6;
+}
+
+.petal {
+  height: 1em;
+  width: 1em;
+  border-radius: 40% 70% / 7% 90%;
+  background: linear-gradient(#39170e, #b07a62);
+  border: 0.5px solid #a36a54;
+  z-index: 0;
+  transition: width 0.8s ease, height 0.8s ease;
+}
+
+.two {
+  transform: rotate(90deg);
+}
+
+.three {
+  transform: rotate(270deg);
+}
+
+.four {
+  transform: rotate(180deg);
+}
+
+.btn-flw:hover .petal {
+  background: linear-gradient(#5a261b, #c9957d);
+  border: 0.5px solid #b07a62;
+}
+
+.btn-flw:hover .flower {
+  grid-template-columns: 1.5em 1.5em;
+}
+
+.btn-flw:hover .flower .petal {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn-flw:hover .text {
+  background-color: rgba(225, 194, 165, 0.4);
+}
+
+/* ANIMACIONES */
+
+@keyframes flower1 {
+  from { transform: rotate(5deg); }
+  to { transform: rotate(365deg); }
+}
+
+@keyframes flower2 {
+  from { transform: rotate(35deg); }
+  to { transform: rotate(-325deg); }
+}
+
+@keyframes flower3 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes flower4 {
+  from { transform: rotate(15deg); }
+  to { transform: rotate(375deg); }
+}
+
+@keyframes flower5 {
+  from { transform: rotate(25deg); }
+  to { transform: rotate(-335deg); }
+}
+
+@keyframes flower6 {
+  from { transform: rotate(30deg); }
+  to { transform: rotate(390deg); }
+}

@@ -102,4 +102,172 @@ section {
   background-color: #39170e;
 }
 
+.btn-flw {
+  height: 4em;
+  width: 12em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0px solid black;
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 2em;
+  width: 8em;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 17px;
+  z-index: 1;
+  color: #39170e;
+  background-color: rgba(225, 194, 165, 0.8);
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.flower {
+  display: grid;
+  grid-template-columns: 1em 1em;
+  position: absolute;
+  transition: grid-template-columns 0.8s ease;
+}
+
+.flower1 {
+  top: -12px;
+  left: -13px;
+  transform: rotate(5deg);
+  animation: 15s linear infinite flower1;
+}
+
+.flower2 {
+  bottom: -5px;
+  left: 8px;
+  transform: rotate(35deg);
+  animation: 13s linear infinite flower2;
+}
+
+.flower3 {
+  bottom: -15px;
+  transform: rotate(0deg);
+  animation: 16s linear infinite flower3;
+}
+
+.flower4 {
+  top: -14px;
+  transform: rotate(15deg);
+  animation: 17s linear infinite flower4;
+}
+
+.flower5 {
+  right: 11px;
+  top: -3px;
+  transform: rotate(25deg);
+  animation: 20s linear infinite flower5;
+}
+
+.flower6 {
+  right: -15px;
+  bottom: -15px;
+  transform: rotate(30deg);
+  animation: 15s linear infinite flower6;
+}
+
+.petal {
+  height: 1em;
+  width: 1em;
+  border-radius: 40% 70%/7% 90%;
+  background: linear-gradient(#39170e, #b07a62);
+  border: 0.5px solid #a36a54;
+  z-index: 0;
+  transition: width 0.8s ease, height 0.8s ease;
+}
+
+.two {
+  transform: rotate(90deg);
+}
+
+.three {
+  transform: rotate(270deg);
+}
+
+.four {
+  transform: rotate(180deg);
+}
+
+.btn-flw:hover .petal {
+  background: linear-gradient(#5a261b, #c9957d);
+  border: 0.5px solid #b07a62;
+}
+
+.btn-flw:hover .flower {
+  grid-template-columns: 1.5em 1.5em;
+}
+
+.btn-flw:hover .flower .petal {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn-flw:hover .text {
+  background-color: rgba(225, 194, 165, 0.4);
+}
+
+/* ANIMACIONES */
+@keyframes flower1 {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(365deg);
+  }
+}
+@keyframes flower2 {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(-325deg);
+  }
+}
+@keyframes flower3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flower4 {
+  from {
+    transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(375deg);
+  }
+}
+@keyframes flower5 {
+  from {
+    transform: rotate(25deg);
+  }
+  to {
+    transform: rotate(-335deg);
+  }
+}
+@keyframes flower6 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(390deg);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
