@@ -1,103 +1,115 @@
 // Variables básicas
-$bg: #0f172a;        // fondo
-$card: #111827;      // tarjeta
 $text: #39170e;      // texto
-$muted: #39170e;     // texto suave
-$accent: #22c55e;    // verde
-$accent2: #60a5fa;   // azul
 
 * { box-sizing: border-box; }
-
-body {
+html, body {
   margin: 0;
-  min-height: 100vh;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  padding: 0;
+}
 
+main.app {
+  display: flow-root; /* evita colapso de márgenes */
+}
+main{
+  min-height: 100vh;
+  font-family: "Alegreya", serif;
+  // font-family: "Petit Formal Script", cursive;
+  // font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-image: url("/src/images/fondo.jpg");
   background-size: cover;        // 🔑 cubre toda la pantalla
   background-position: center;   // centra la imagen
   background-repeat: no-repeat;  // evita mosaico
   background-attachment: fixed;  // opcional: efecto parallax
-
   color: $text;
 }
-
-.app {
-  max-width: 100%;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Alegreya", serif;
+  // font-family: "Petit Formal Script", cursive;
+  // font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.muted {
-  color: $muted;
-  margin: 0;
+span{
+  font-family: "Alegreya", serif;
+  // font-family: "Petit Formal Script", cursive;
+  // font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.card {
-  // background: rgba($card, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+section{
+  position: relative;
+  margin-bottom: 64px;
 }
 
-.row {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.btn {
-  border: 0;
-  cursor: pointer;
-  border-radius: 12px;
-  color: #06121a;
-  // background: linear-gradient(135deg, $accent, $accent2);
-  font-weight: 700;
-
-  &:hover { filter: brightness(1.05); }
-  &:active { transform: translateY(1px); }
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  font-size: 2rem;
-  font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  // background: rgba(255, 255, 255, 0.06);
-
-  &.ok {
-    border-color: rgba($accent, 0.4);
-    // background: rgba($accent, 0.14);
-  }
-}
-
-.counter {
-  color: $muted;
-
-  strong { color: $text; }
-}
-
-.note {
-  color: $muted;
-
-  code {
-    color: $text;
-    border-radius: 8px;
-  }
-}
-
+.title,
 #countdown {
   font-size: 2rem;
   font-weight: bold;
 }
 
 .image {
-  margin: 0;
-  position: relative;
-  z-index: 10;
-  background-image: url("/src/images/boda-fran-ana.png");
-  background-size: contain;        // 🔑 cubre toda la pantalla
-  background-position: center;   // centra la imagen
-  background-repeat: no-repeat;  // evita mosaico
-  min-height: 80vh;
+  width: 100%;
+  // min-height: 80vh;
+  // margin: 0;
+  // padding: 0;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.my-card{
+  margin-bottom: 32px;
+  // border: 1px solid #39170e;
+  // border-radius: 6px;
+  // padding: 16px;
+  // max-width: 90%;
+  // margin: auto;
+}
+
+.icon-image{
+  width: 60px;
+  margin-bottom: 8px;
+}
+
+.btn-maps {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+  background-color: #39170e;
+  color: #e1c2a5;
+  border: 1px solid #39170e;
+  border-radius: 6px;
+  transition: all ease 0.4s;
+  &:hover {
+    background-color: transparent;
+    color: #39170e;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 300px;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: $text
 }

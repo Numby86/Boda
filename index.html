@@ -8,12 +8,9 @@
     <!-- ===================== -->
     <!-- Google Font -->
     <!-- ===================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Petit+Formal+Script&display=swap" rel="stylesheet">
 
     <!-- ===================== -->
     <!-- Bootstrap CSS -->
@@ -35,21 +32,107 @@
     <!-- CSS compilado desde SCSS -->
     <!-- ===================== -->
     <link rel="stylesheet" href="./dist/css/main.css" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
   </head>
 
   <body>
-    <main class="app container p-0 m-0 pb-5">
+    <main class="app container-fluid p-0 m-0 pb-5">
 
-      <section class="image text-center p-0 m-0 mx-auto" data-aos="fade-up">
+      <section class="image text-center">
+        <img
+          src="./src/images/boda-fran-ana.png"
+          alt="Boda Ana Sara y Fran"
+          class="hero-image"
+        />
       </section>
 
       <section class="text-center mx-auto" data-aos="fade-up">
-        <h1 class="display-5 my-5 text-uppercase">Boda <br>Ana Sara y Fran</h1>
+        <!-- <h1 class="mt-0">Boda <br>Ana Sara y Fran</h1> -->
+        <h1 class="title mt-0">Nos vemos en</h1>
         <div id="countdown">
-          <span id="days">00</span>D -
-          <span id="hours">00</span>H-
-          <span id="minutes">00</span>M-
-          <span id="seconds">00</span>S
+          <span id="days">00</span>d -
+          <span id="hours">00</span>h -
+          <span id="minutes">00</span>m -
+          <span id="seconds">00</span>s
+        </div>
+      </section>
+
+      <section class="list text-center mx-auto" data-aos="fade-up">
+        <div class="my-card">
+          <img
+            src="./src/images/bus.png"
+            alt="Boda Ana Sara y Fran"
+            class="icon-image"
+          />
+          <h2>BUS</h2>
+          <!-- <p>18:00 h. Parroquia <br>San Martin de Tours <br>San Martín de Valdeiglesias <br>(Madrid)</p> -->
+        </div>
+        <div class="my-card">
+          <img
+            src="./src/images/iglesia.png"
+            alt="Boda Ana Sara y Fran"
+            class="icon-image"
+          />
+          <h2>CEREMONIA</h2>
+          <p>18:00 h. Parroquia <br>San Martin de Tours <br>San Martín de Valdeiglesias <br>(Madrid)</p>
+          <a href="https://maps.app.goo.gl/qVatEH4owxSj4yDD9" target="_blank" rel="noopener" class="btn-maps">
+            Cómo llegar
+          </a>
+        </div>
+        <div class="my-card">
+          <img
+            src="./src/images/coctel.png"
+            alt="Boda Ana Sara y Fran"
+            class="icon-image"
+          />
+          <h2>COCTEL Y CONVITE</h2>
+          <p>Hotel toros de Guisando <br>El Tiemblo (Ávila)</p>
+          <a href="https://maps.app.goo.gl/tMzVcNjKwBwKBnz3A" target="_blank" rel="noopener" class="btn-maps">
+            Cómo llegar
+          </a>
+        </div>
+        <div class="my-card">
+          <img
+            src="./src/images/fiesta.png"
+            alt="Boda Ana Sara y Fran"
+            class="icon-image"
+          />
+          <h2>FIESTA</h2>
+          <!-- <p>18:00 h. Parroquia <br>San Martin de Tours <br>San Martín de Valdeiglesias <br>(Madrid)</p> -->
+        </div>
+      </section>
+
+      <section class="text-center mx-auto" data-aos="fade-up">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./src/images/slide-1.jpg"
+                alt="Boda Ana Sara y Fran"
+                class="hero-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./src/images/slide-2.jpg"
+                alt="Boda Ana Sara y Fran"
+                class="hero-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./src/images/slide-3.jpg"
+                alt="Boda Ana Sara y Fran"
+                class="hero-image"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -71,6 +154,7 @@
       defer
     ></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- ===================== -->
     <!-- Tu JS -->
     <!-- ===================== -->

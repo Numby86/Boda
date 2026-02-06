@@ -1,11 +1,22 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+}
+
+main.app {
+  display: flow-root; /* evita colapso de márgenes */
+}
+
+main {
   min-height: 100vh;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-image: url("/src/images/fondo.jpg");
   background-size: cover;
   background-position: center;
@@ -14,82 +25,81 @@ body {
   color: #39170e;
 }
 
-.app {
-  max-width: 100%;
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.muted {
-  color: #39170e;
-  margin: 0;
+span {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+section {
+  position: relative;
+  margin-bottom: 64px;
 }
 
-.row {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.btn {
-  border: 0;
-  cursor: pointer;
-  border-radius: 12px;
-  color: #06121a;
-  font-weight: 700;
-}
-.btn:hover {
-  filter: brightness(1.05);
-}
-.btn:active {
-  transform: translateY(1px);
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  font-size: 2rem;
-  font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-.badge.ok {
-  border-color: rgba(34, 197, 94, 0.4);
-}
-
-.counter {
-  color: #39170e;
-}
-.counter strong {
-  color: #39170e;
-}
-
-.note {
-  color: #39170e;
-}
-.note code {
-  color: #39170e;
-  border-radius: 8px;
-}
-
+.title,
 #countdown {
   font-size: 2rem;
   font-weight: bold;
 }
 
 .image {
-  margin: 0;
-  position: relative;
-  z-index: 10;
-  background-image: url("/src/images/boda-fran-ana.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.my-card {
+  margin-bottom: 32px;
+}
+
+.icon-image {
+  width: 60px;
+  margin-bottom: 8px;
+}
+
+.btn-maps {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 0.4rem 1.2rem;
+  text-decoration: none;
+  background-color: #39170e;
+  color: #e1c2a5;
+  border: 1px solid #39170e;
+  border-radius: 6px;
+  transition: all ease 0.4s;
+}
+.btn-maps:hover {
+  background-color: transparent;
+  color: #39170e;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 300px;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #39170e;
 }
 
 /*# sourceMappingURL=main.css.map */

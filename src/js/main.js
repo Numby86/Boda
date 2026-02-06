@@ -55,3 +55,8 @@ const interval = setInterval(updateCountdown, 1000);
 
 // Ejecutar una vez al cargar
 updateCountdown();
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "cards",
+  grabCursor: true,
+});
