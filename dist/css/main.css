@@ -80,6 +80,11 @@ section {
   color: #39170e;
 }
 
+.asist {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .hero-image {
   width: 100%;
   max-width: 100%;
